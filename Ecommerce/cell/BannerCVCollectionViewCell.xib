@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCVCollectionViewCell" id="gTV-IL-0wX" customClass="BannerCVCollectionViewCell" customModule="Ecommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bci-ia-YoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bci-ia-YoZ" secondAttribute="bottom" id="06r-d7-Vnp"/>
+                <constraint firstItem="Bci-ia-YoZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7FJ-LX-rbS"/>
+                <constraint firstAttribute="trailing" secondItem="Bci-ia-YoZ" secondAttribute="trailing" id="TXp-ih-yCu"/>
+                <constraint firstItem="Bci-ia-YoZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dYH-eX-5ji"/>
+            </constraints>
+            <connections>
+                <outlet property="bannerImg" destination="Bci-ia-YoZ" id="oFH-3u-k18"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="-11"/>
+        </collectionViewCell>
+    </objects>
+</document>
